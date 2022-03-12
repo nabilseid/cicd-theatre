@@ -14,8 +14,9 @@ jobs:
   run-check-in-script:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v2
       - run: pwd
       - run: ls .
       - name: Run check-in script
-        run: ${{ github.workflow }}/.github/scripts/check-in.sh
+        run: ./.github/scripts/check-in.sh
         shell: bash
