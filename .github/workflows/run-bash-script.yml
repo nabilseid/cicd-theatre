@@ -2,7 +2,7 @@ name: learn-github-Actions
 
 on:
   push:
-    branchs: [action-test-1]
+    branchs: [ action-test-1, main ]
 
   run-check-in-script:
     runs-on: ubuntu-latest
