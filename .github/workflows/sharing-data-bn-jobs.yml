@@ -6,7 +6,6 @@ on:
 
 jobs:
   cache-log:
-    name: Save output
     steps:
       - shell: bash
         run: |
@@ -18,6 +17,7 @@ jobs:
           path: output.log
   
   read-log:
+    needs: cache-log
     steps:
       - name: Download a single artifact
         uses: actions/download-artifact@v3
