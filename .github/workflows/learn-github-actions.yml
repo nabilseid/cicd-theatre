@@ -2,7 +2,7 @@ name: learn-github-Actions
 
 on:
   push:
-    branchs:
+    branches:
       - 'main'
       - 'action-test-1'
 
