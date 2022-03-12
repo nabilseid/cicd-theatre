@@ -4,6 +4,7 @@ on:
   push:
     branchs: [ action-test-1, main ]
 
+jobs:
   run-check-in-script:
     runs-on: ubuntu-latest
     steps:
