@@ -10,3 +10,17 @@ jobs:
           node-version: 14
       - run: npm install -g bats
       - run: bats -v
+
+name: run-bash-script
+
+on:
+  push:
+    branches: [action-test-1]
+
+jobs:
+  run-check-in-script:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Run check-in script
+        run: ./.github/scripts/check-in.sh
+        shell: bash
