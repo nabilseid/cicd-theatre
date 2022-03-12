@@ -1,0 +1,16 @@
+name: learn-github-Actions
+
+on:
+  push:
+    branches: [ action-test-1, main ]
+
+jobs:
+  run-check-in-script:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Run check-in script
+        run: |
+          chmod +x ./.github/scripts/check-in.sh
+          ./.github/scripts/check-in.sh
+        shell: bash
