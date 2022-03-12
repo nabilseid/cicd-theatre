@@ -11,11 +11,11 @@ jobs:
       - run: npm install -g bats
       - run: bats -v
 
-name: run-bash-script
+        #name: run-bash-script
 
-on:
-  push:
-    branches: [action-test-1]
+        #on:
+        #push:
+        #branches: [action-test-1]
 
 jobs:
   run-check-in-script:
