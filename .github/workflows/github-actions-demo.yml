@@ -1,7 +1,9 @@
 name: GitHub Actions Demo
 on:
   push:
-    branchs: [ actions-test-1, main ]
+    branches:
+      - 'main'
+      - 'actions-test-1'
 
 jobs:
   Explore-GitHub-Actions:
