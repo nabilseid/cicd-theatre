@@ -11,15 +11,11 @@ jobs:
       - run: npm install -g bats
       - run: bats -v
 
-        #name: run-bash-script
-
-        #on:
-        #push:
-        #branches: [action-test-1]
-
   run-check-in-script:
     runs-on: ubuntu-latest
     steps:
+      - run: pwd
+      - run: ls .
       - name: Run check-in script
         run: ./.github/scripts/check-in.sh
         shell: bash
