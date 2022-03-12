@@ -2,7 +2,9 @@ name: learn-github-Actions
 
 on:
   push:
-    branchs: [ action-test-1, main ]
+    branchs:
+      - 'main'
+      - 'action-test-1'
 
 jobs:
   check-bats-version:
