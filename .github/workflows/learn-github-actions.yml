@@ -18,5 +18,7 @@ jobs:
       - run: pwd
       - run: ls .
       - name: Run check-in script
-        run: ./.github/scripts/check-in.sh
+        run: |
+          chmod +x ./.github/scripts/check-in.sh
+          ./.github/scripts/check-in.sh
         shell: bash
