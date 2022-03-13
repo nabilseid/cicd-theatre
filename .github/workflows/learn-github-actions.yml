@@ -3,7 +3,6 @@ name: learn-github-Actions
 on:
   push:
     branches:
-      - 'main'
       - 'action-test-1'
 
 jobs:
