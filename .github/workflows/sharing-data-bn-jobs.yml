@@ -2,7 +2,7 @@ name: sharing-data-bn-jobs
 
 on:
   push:
-    branches: [ main, actions/sharing-data-bn-jobs ]
+    branches: [ actions/sharing-data-bn-jobs ]
 
 jobs:
   cache-log:

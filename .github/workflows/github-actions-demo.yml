@@ -2,7 +2,6 @@ name: GitHub Actions Demo
 on:
   push:
     branches:
-      - 'main'
       - 'actions-test-1'
 
 jobs:
