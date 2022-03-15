@@ -1,0 +1,30 @@
+name: Dependent Jobs 
+
+on:
+  push:
+    branches: [ actions/dependent-jobs ]
+
+jobs:
+  setup:
+    name: Setting up 
+    runs-on: ubuntu-latest
+    steps:
+      - name: Setting actions up 
+        run: echo 'Oh well! here we are setting up'
+  
+  build:
+    needs: setup
+    name: Building
+    runs-on: ubuntu-latest
+    steps:
+      - name: Building actions
+        run: echo 'What are we building really! 😕'
+
+  test:
+    needs: build 
+    name: Testing
+    runs-on: ubuntu-latest
+    steps:
+      - name: Testing actions
+        run: echo 'Finally! testing nothing'
+
