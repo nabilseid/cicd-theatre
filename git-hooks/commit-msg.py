@@ -3,7 +3,6 @@
 import sys
 
 def main():
-    print(str(sys.argv))
     print("Number of argument", len(sys.argv))
     print("Argument List", str(sys.argv))
 
